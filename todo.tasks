@@ -1,0 +1,7 @@
+Exploration:
+    ✔ Expand release_date into year, month, day @done(21-01-14 08:58)
+    ✔ Save cleaned data @done(21-01-15 08:21)
+Plotting:
+    ☐ Number of songs in dataset over time
+    ☐ Songs properties average over time. eg average acousticness per year
+    ☐ Distributions of song properties (kdeplot, distplot)
