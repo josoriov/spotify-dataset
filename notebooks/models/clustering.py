@@ -2,7 +2,9 @@
 # %% Importing the dependencies
 import numpy as np
 import pandas as pd
+import joblib as jl
 import matplotlib.pyplot as plt
+import matplotlib.cm as cm
 import seaborn as sns
 from dython.nominal import associations
 from sklearn.utils.validation import check_random_state
@@ -71,7 +73,20 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # %%
-
 from sklearn.preprocessing import StandardScaler
+
+scaler = StandardScaler()
+scaler.fit(X_test)
+X_scaled = scaler.transform(X_test)
+
+jl.dump(scaler, 'scaler.joblib')
+# %%
+# The silhouette plots and score shows the optimal number of clusters is either 2 or 3
 from sklearn.cluster import KMeans
 
+kmeans = KMeans(n_clusters=3, random_state=10)
+kmeans.fit(X_scaled)
+
+# Saving the kmeans object
+jl.dump(kmeans, 'cluster.joblib')
+# %%
