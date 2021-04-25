@@ -1,7 +1,16 @@
 Exploration:
     ✔ Expand release_date into year, month, day @done(21-01-14 08:58)
+    ✔ Create a column to save the decade @started(21-01-16 15:08) @done(21-01-16 15:08) @lasted(44s)
     ✔ Save cleaned data @done(21-01-15 08:21)
 Plotting:
-    ☐ Number of songs in dataset over time
-    ☐ Songs properties average over time. eg average acousticness per year
-    ☐ Distributions of song properties (kdeplot, distplot)
+    ✔ Number of songs in dataset over time @done(21-01-16 15:09)
+    ✔ Songs properties average over time. eg average acousticness per year @done(21-01-16 15:09)
+    ✔ Distributions of song properties (kdeplot, distplot) @done(21-01-16 15:09)
+Features:
+Modelling:
+    ☐ Cluster model to find underlying structure of the data
+    ☐ Simple parametrics models
+    ☐ More complex models (SVM, Tree-based models)
+    ☐ Neural networks (maybe)
+Reporting:
+
